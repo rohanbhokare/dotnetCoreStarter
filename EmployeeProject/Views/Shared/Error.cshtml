@@ -1,0 +1,10 @@
+﻿@if (ViewBag.ErrorTitle == null)
+{
+    <h3>An Error Occur Processing your request. The Support team is notified and we are working on the fix.</h3>
+    <h5>Please Contact us on Craftscript.com</h5>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
